@@ -22,7 +22,15 @@ public class Sudoku {
                 }
             }
             System.out.println(Arrays.deepToString(arrayCells));
+            
+            //elimination of candidates in row
+            for (Cell[] row: arrayCells) {
+                Row currentRow = new Row(row);
+                currentRow.eliminateCandidates();
+            }
         }
+
+        
 
 
         

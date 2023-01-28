@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Cell {
 
-    private Set<Integer> candidates;
+    private TreeSet<Integer> candidates;
     
 
     public Cell(int dimension) {
-        this.candidates = new HashSet<Integer>();
+        this.candidates = new TreeSet<Integer>();
         for (int i = 0; i < dimension; i++) {
             candidates.add(i + 1);
         }
@@ -14,6 +14,14 @@ public class Cell {
 
     public void izpisKandidatov() {
         System.out.println(candidates);
+    }
+
+    public int numberOfCandidates() {
+        return this.candidates.size();
+    }
+
+    public int getFirst() {
+        return this.candidates.first();
     }
     
     
