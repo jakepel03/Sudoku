@@ -28,6 +28,20 @@ public class Sudoku {
                 Row currentRow = new Row(row);
                 currentRow.eliminateCandidates();
             }
+
+            //elimination of candidates in column
+            for (int column = 0; column < arrayCells[0].length; column++) {
+                List<Cell> columnCells = new ArrayList<>();
+                for (int row = 0; row < arrayCells.length; row++) {
+                    columnCells.add(arrayCells[row][column]);
+                    Column currentColumn = new Column(columnCells);
+                    currentColumn.eliminateCandidates();
+                }
+            }
+
+            for (int i = 0; i < arrayCells.length; i++) {
+                System.out.println(Arrays.toString(arrayCells[i]));
+            }
         }
     }
 }

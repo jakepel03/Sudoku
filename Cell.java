@@ -35,7 +35,7 @@ public class Cell {
         return String.format("%s", candidates.toString());
     }
 
-    public void removeCandidates(Collection collection) {
+    public void removeCandidates(Collection<Integer> collection) {
         this.candidates.removeAll(collection);
     }
     
