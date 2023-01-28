@@ -29,12 +29,6 @@ public class Sudoku {
                 currentRow.eliminateCandidates();
             }
         }
-
-        
-
-
-        
-        
         
     }
 }

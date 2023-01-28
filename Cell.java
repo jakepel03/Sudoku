@@ -24,7 +24,6 @@ public class Cell {
         return this.candidates.first();
     }
     
-    
     //known number in this cell -> set candidates to this num only
     public void setCandidates(Integer element) {
         this.candidates.clear();
