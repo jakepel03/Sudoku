@@ -36,6 +36,10 @@ public class Cell {
         return String.format("%s", candidates.toString());
     }
 
+    public void removeCandidates(Collection collection) {
+        this.candidates.removeAll(collection);
+    }
+
 
 
 

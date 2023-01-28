@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -21,6 +19,11 @@ public class Row {
                 usedNums.add(num);
             }
         }
-        System.out.println(usedNums);
+        //removing usedNums from each cell's candidates
+        for (Cell cell: rowCells) {
+            if (cell.numberOfCandidates() > 1) {
+                cell.removeCandidates(usedNums);
+            }
+        }
     }
 }
