@@ -38,4 +38,5 @@ public class Cell {
     public void removeCandidates(Collection collection) {
         this.candidates.removeAll(collection);
     }
+    
 }
