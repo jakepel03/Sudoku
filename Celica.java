@@ -3,7 +3,6 @@ import java.util.*;
 public class Celica {
 
     private Set<Integer> kandidati;
-    private int trenutnaSt;
     private int vrstica;
     private int stolpec;
     
