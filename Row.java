@@ -8,7 +8,7 @@ public class Row {
     public Row(Cell[] row) {
         this.rowCells = row;
     }
-
+    
     public void eliminateCandidates() {
         Set<Integer> usedNums = new TreeSet<>();
         for (Cell cell: rowCells) {

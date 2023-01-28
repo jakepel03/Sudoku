@@ -28,8 +28,6 @@ public class Sudoku {
                 Row currentRow = new Row(row);
                 currentRow.eliminateCandidates();
             }
-
-            
         }
 
         
